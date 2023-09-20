@@ -2,11 +2,12 @@
 
 namespace App\Models;
 
+use App\Models\RoleModel;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
@@ -17,11 +18,24 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
+    protected $table = 'tb_users';
+    protected $primaryKey = 'id_users';
+    // protected $fillable = [
+    //     'name',
+    //     'username',
+    //     'email',
+    //     'password',
+    //     'phone_number',
+    //     'id_role',
+
+    // ];
+    protected $guarded = [
+        'id_users'
     ];
+    public function tb_role(): \Illuminate\Database\Eloquent\Relations\BelongsTo 
+    {
+        return $this->belongsTo(RoleModel::class, 'id_role', 'id_role');   
+    }
 
     /**
      * The attributes that should be hidden for serialization.

@@ -16,7 +16,7 @@ class CreateTbRole extends Migration
         Schema::create('tb_role', function (Blueprint $table) {
             $table->bigIncrements('id_role'); // Ini akan membuat kolom 'id' sebagai primary key (jika belum ada)
             $table->string('role_name')->unique(); // Kolom 'role_name' harus unik
-            $table->json('menu');
+            $table->text('menu');
             $table->timestamps();
         });
     }

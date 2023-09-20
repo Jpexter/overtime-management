@@ -15,10 +15,10 @@ class CreateTbMasterProject extends Migration
     {
         Schema::create('tb_master_project', function (Blueprint $table) {
             $table->bigIncrements('id_project');
-            $table->foreignId('id_users')->constrained('tb_users', 'id_users')->cascadeOnDelete();
             $table->string('project_name');
             $table->enum('status', ['normal', 'holiday']);
             $table->string('is_on_duty');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

@@ -1,0 +1,36 @@
+management user 
+update user
+delete user
+register user
+login user
+
+membuat work flow
+membuat timeline 
+
+dribbble.com
+id.pinterest.com
+www.behance.net
+
+presentasi bagaimana cara halaman bekerja
+melakukan scrum setiap hari
+
+
+Jumat 15/09/2023
+report:
+Membuat repo gihub dan membuat file project PRAKERIN 
+Plain:
+Membuat Api Untuk login dan Register
+
+senin 18/09/2023
+report:
+membuat timeline dan workflow
+plain:
+memperbaiki timeline dan workflow
+
+Hari 19/09/2023
+update mockup
+
+Report:
+Memperbaiki timeline dan workflow
+Plain:
+Membuat controller dan model di halaman login

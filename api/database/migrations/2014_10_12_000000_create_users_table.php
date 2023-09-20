@@ -16,12 +16,13 @@ class CreateUsersTable extends Migration
         Schema::create('tb_users', function (Blueprint $table) {
             $table->bigIncrements('id_users'); // Menggunakan bigIncrements sebagai primary key
             $table->string('name', 90);
-            $table->string('username');
+            $table->string('username')->unique();
             $table->string('email');
+            // $table->timestamp('email_verified_at')->nullable(); 
             $table->string('password');
-            $table->integer('phone_number');
-            $table->rememberToken();
+            $table->string('phone_number');
             $table->foreignId('id_role')->constrained('tb_role', 'id_role')->cascadeOnDelete();
+            // $table->rememberToken();
             $table->timestamps();
         });
     }
