@@ -9,7 +9,9 @@ use Illuminate\Support\Facades\Hash;
 class RegisterController extends Controller
 {
     
-
+    public function index(){
+        
+    }
 
     public function store(Request $request)
     {
