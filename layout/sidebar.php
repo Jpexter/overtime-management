@@ -64,7 +64,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="dashboard.html" class="nav-link">
+            <a href="attendance.php" class="nav-link">
               <i class="nav-icon fas fa-list"></i>
               <p>
                 Attendance

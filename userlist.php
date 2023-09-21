@@ -100,7 +100,7 @@ require"layout/sidebar.php" ;
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </div> 
             <!-- /.card-body -->
           </div>
           <!-- /.card -->
