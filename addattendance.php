@@ -1,16 +1,16 @@
 <?php 
-require "layout/header.php" ;
-require "layout/sidebar.php" ;
+require "layout/header.php";
+require "layout/sidebar.php";
 ?>
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Edit User List</h1>
+            <h1 class="m-0">Attendance</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -27,7 +27,7 @@ require "layout/sidebar.php" ;
     <!-- SELECT2 EXAMPLE -->
     <div class="card card-default">
         <div class="card-header">
-          <h3 class="card-title">Form Example</h3>
+          <h3 class="card-title">Form Attendance</h3>
         </div>
         <!-- /.card-header -->
         <div class="card-body">
@@ -35,18 +35,16 @@ require "layout/sidebar.php" ;
             <div class="col-md-6">
               <form>
                 <div class="form-group">
-                  <label for="username">Username</label>
-                  <input type="text" name="username" class="form-control" id="username" placeholder="Username">
-                </div>
-                <!-- /.form-group -->
-                <div class="form-group">
                   <label for="name">Name</label>
                   <input type="text" name="name" class="form-control" id="name" placeholder="Name">
                 </div>
-                <!-- /.form-group -->
                 <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                  <label for="divisi">Divisi</label>
+                  <input type="text" name="divisi" class="form-control" id="divisi" placeholder="Divisi">
+                </div>
+                <div class="form-group">
+                  <label for="reason">Reason</label>
+                  <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
                 </div>
                 <!-- /.form-group -->
               </form>
@@ -54,25 +52,25 @@ require "layout/sidebar.php" ;
             <!-- /.col -->
             <div class="col-md-6">
               <form>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+              <label>Start Date</label>
+                    <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate"/>
+                        <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                        </div>
+                    </div>
+                <!-- /.form-group -->
+                <div class="form-group mt-3">
+                  <label>End Date</label>
+                    <div class="input-group date" id="reservationdatetime" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" data-target="#reservationdatetime"/>
+                        <div class="input-group-append" data-target="#reservationdatetime" data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                        </div>
+                    </div>
                 </div>
                 <!-- /.form-group -->
-                <div class="form-group">
-                  <label for="phone">Number Phone</label>
-                  <input type="text" name="numberphone" class="form-control" id="numberphone" placeholder="+62">
-                </div>
-                <!-- /.form-group -->
-                <div class="form-group">
-                  <label for="role">Role</label>
-                  <select class="form-control select2bs4" name="role" id="role" style="width: 100%;">
-                    <option selected="selected">User</option>
-                    <option>Leader</option>
-                    <option>Admin</option>
-                    <option>Supervisor</option>
-                  </select>
-                </div>
+               
                 <!-- /.form-group -->
               </form>
             </div>
@@ -80,12 +78,12 @@ require "layout/sidebar.php" ;
           </div>
           <!-- /.row -->
           <div class="row">
-            <div class="col-md-12">
+            <div class="col">
               <div class="d-flex justify-content-end">
-                <a href="userlist.php">
+                <a href="attendance.php">
                     <button type="submit" class="btn btn-sm btn-danger mr-2">Cancel</button>
                 </a>
-                <button type="submit" class="btn btn-sm btn-success">Submit</button>
+                <button type="submit" class="btn  btn-sm btn-success">Submit</button>
               </div>
             </div>
           </div>
@@ -98,5 +96,7 @@ require "layout/sidebar.php" ;
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+  
 
-<?php require "layout/footer.php" ; ?>
+<?php require "layout/footer.php"; ?>
+

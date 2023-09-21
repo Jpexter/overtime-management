@@ -1,6 +1,6 @@
 <?php 
-require"layout/header.php";
-require"layout/sidebar.php";
+require "layout/header.php";
+require "layout/sidebar.php";
 ?>
 
 <!-- Content Wrapper. Contains page content -->
@@ -69,5 +69,5 @@ require"layout/sidebar.php";
   </div>
   <!-- /.content-wrapper -->
 
-<?php require"layout/footer.php"; ?>
+<?php require "layout/footer.php"; ?>
 

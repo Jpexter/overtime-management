@@ -1,6 +1,6 @@
 <?php 
-require"layout/header.php";
-require"layout/sidebar.php";
+require "layout/header.php";
+require "layout/sidebar.php";
 ?>
 
 <!-- Content Wrapper. Contains page content -->
@@ -44,7 +44,7 @@ require"layout/sidebar.php";
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="basicsalary">Gaji Pokok</label>
+                  <label for="basicsalary">Basic Salary</label>
                   <input type="text" name="basicsalary" class="form-control" id="basicsalary" placeholder="Rp.">
                 </div>
                 <!-- /.form-group -->
@@ -74,5 +74,5 @@ require"layout/sidebar.php";
   </div>
   <!-- /.content-wrapper -->
 
-<?php require"layout/footer.php"; ?>
+<?php require "layout/footer.php"; ?>
 
