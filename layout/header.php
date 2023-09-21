@@ -56,9 +56,13 @@
         </a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
           <!-- Isi dropdown menu di sini -->
-          <a class="dropdown-item" href="#"> <i class="nav-icon fas fa-user mr-2"></i> Profil</a>
+          <button type="submit" class="btn">
+            <i class="nav-icon fas fa-user mr-2"></i> Profil
+          </button>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#"><i class="nav-icon fas fa-power-off mr-2"></i>Keluar</a>
+          <button type="submit" class="btn">
+            <i class="nav-icon fas fa-power-off mr-2"></i>Keluar
+          </button>
         </div>
       </li>
     </ul>
