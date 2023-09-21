@@ -25,7 +25,8 @@ require"layout/sidebar.php" ;
 
     <!-- Main content -->
     <!-- /.row -->
-    <div class="row  d-flex align-items-center justify-content-center">
+    <div class="container" style="width: 1100px;">
+      <div class="row d-flex align-items-center justify-content-center">
         <div class="col-11">
             <div class="d-flex justify-content-end">
                 <button class="btn btn-sm bg-success" style="width: 70px;">
@@ -114,6 +115,7 @@ require"layout/sidebar.php" ;
         </div>
       </div>
       <!-- /.row -->
+    </div>  
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->

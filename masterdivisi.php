@@ -25,7 +25,8 @@ require"layout/sidebar.php" ;
 
     <!-- Main content -->
     <!-- /.row -->
-    <div class="row  d-flex align-items-center justify-content-center">
+    <div class="container" style="width: 1100px;">
+        <div class="row  d-flex align-items-center justify-content-center">
         <div class="col-11">
             <div class="d-flex justify-content-end">
                 <button class="btn btn-sm bg-success" style="width: 70px;">
@@ -49,7 +50,7 @@ require"layout/sidebar.php" ;
                     <td>1</td>
                     <td>IT</td>
                     <td>
-                    <button class="btn btn-xs btn-success">Active</button>
+                    <button class="btn btn-sm btn-success">Active</button>
                     </td>
                     <td>
                         <button class="btn">
@@ -64,7 +65,7 @@ require"layout/sidebar.php" ;
                     <td>2</td>
                     <td>IT Support</td>
                     <td>
-                    <button class="btn btn-xs btn-success">Active</button>
+                    <button class="btn btn-sm btn-success">Active</button>
                     </td>
                     <td>
                         <button class="btn">
@@ -79,7 +80,7 @@ require"layout/sidebar.php" ;
                     <td>3</td>
                     <td>Web Development</td>
                     <td>
-                    <button class="btn btn-xs btn-success">Active</button>
+                    <button class="btn btn-sm btn-success">Active</button>
                     </td>
                     <td>
                         <button class="btn">
@@ -94,7 +95,7 @@ require"layout/sidebar.php" ;
                     <td>4</td>
                     <td>IT Security</td>
                     <td>
-                    <button class="btn btn-xs btn-success">Active</button>
+                    <button class="btn btn-sm btn-success">Active</button>
                     </td>
                     <td>
                         <button class="btn">
@@ -114,8 +115,10 @@ require"layout/sidebar.php" ;
         </div>
       </div>
       <!-- /.row -->
+    </div>
     <!-- /.content -->
-  </div>
+    </div>
   <!-- /.content-wrapper -->
+
 
 <?php require"layout/footer.php"; ?>
