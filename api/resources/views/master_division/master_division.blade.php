@@ -9,7 +9,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0">User List</h1>
+          <h1 class="m-0">Master Division</h1>
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
@@ -28,7 +28,7 @@
       <div class="col-11">
           <div class="d-flex justify-content-end">
               <button class="btn btn-sm bg-success" style="width: 70px;">
-                  <a href="adduserlist.html">+ Add</a>
+                  <a href="/masterdivision/create">+ Add</a>
               </button>
           </div>
         <div class="card">
@@ -38,31 +38,36 @@
               <thead class="bg-white">
                 <tr>
                   <th>No</th>
-                  <th>Name</th>
-                  <th>Role</th>
+                  <th>Name Division</th>
+                  <th>Status Division</th>
                   <th>Action</th>
                 </tr>
               </thead>
               <tbody>
-                @foreach ($data as $row)
-                <tr>
-                  <td>{{$loop->iteration}}</td>
-                  <td>{{$row->name}}</td>
-                  <td>{{$row->id_role}}</td>
-                  <td>
-                      <button class="btn">
-                          <a href="/edituser/{{$row->id_users}}">
-                              <i class="fas fa-edit text-warning"></i> <!-- Ikon Edit -->
-                          </a>
-                      </button>
-                      <button class="btn">
-                        <a href="/delete/{{$row->id_users}}">
-                          <i class="fas fa-trash text-danger"></i>
-                        </a>
-                      </button>
-                  </td>
-                </tr>
+                @foreach ($divisions as $division)
+                    <tr>
+                        <td>{{ $loop->iteration}}</td>
+                        <td>{{ $division->name_division }}</td>
+                        <td>{{ $division->status_division }}</td>
+                        <td>
+                            <button class="btn">
+                                <a href="/masterdivision/{{$division->id_division}}/edit">
+                                    <i class="fas fa-edit text-warning"></i> <!-- Ikon Edit -->
+                                </a>
+                            </button>
+                            <form action="/masterdivision/{{$division->id_division}}" method="post" class="d-inline">
+                                @method('delete')
+                                @csrf
+                                <button class="btn">
+                                    <a href="">
+                                        <i class="fas fa-trash text-danger"></i>
+                                    </a>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
                 @endforeach
+                
               </tbody>
             </table>
           </div>

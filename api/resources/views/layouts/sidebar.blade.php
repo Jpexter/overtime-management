@@ -92,7 +92,7 @@
               </li>
               <li class="nav-item">
                 <a href="pages/UI/buttons.html" class="nav-link">
-                  <p>Master Divisi</p>
+                  <p>Master Division</p>
                 </a>
               </li>
             </ul>
@@ -107,7 +107,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="userlist.html" class="nav-link">
+                <a href="/userlist.index" class="nav-link">
                   <p>User List</p>
                 </a>
               </li>

@@ -9,9 +9,13 @@ class MasterDivisionModel extends Model
 {
     use HasFactory;
 
-    protected $table = 'tb_role';
-    protected $fillable = [
-        'name_division',
-        'status'
+    public $timestamps = false;
+    protected $table = 'tb_master_division';
+
+    protected $primaryKey = 'id_division';
+    
+    protected $guarded = [
+        'id_division'
     ];
+
 }
