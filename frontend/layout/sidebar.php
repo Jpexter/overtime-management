@@ -30,12 +30,12 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
+                <a href="dataovertime.php" class="nav-link">
                   <p>Data Overtime</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                <a href="historyovertime.php" class="nav-link">
                   <p>History Overtime</p>
                 </a>
               </li>
@@ -51,19 +51,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
+                <a href="datatimeoff.php" class="nav-link">
                   <p>Data Time Off</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/layout/top-nav-sidebar.html" class="nav-link">
+                <a href="historytimeoff.php" class="nav-link">
                   <p>History Time Off</p>
                 </a>
               </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="dashboard.html" class="nav-link">
+            <a href="attendance.php" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Attendance
