@@ -1,11 +1,3 @@
-<<<<<<< HEAD:dashboard.php
-<?php 
-require"layout/header.php" ;
-require"layout/sidebar.php" ;
-?>
-=======
->>>>>>> 95d501c69bd4a87002353bdc8c44280fc3a7d9b8:api/resources/views/layouts/content.blade.php
-
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
@@ -611,5 +603,3 @@ require"layout/sidebar.php" ;
 <<<<<<< HEAD:dashboard.php
   </div>
   <!-- /.content-wrapper -->
-
-<?php require "layout/footer.php" ;?>
