@@ -1,7 +1,7 @@
 <<<<<<< HEAD:dashboard.php
 <?php 
-require "layout/header.php" ;
-require "layout/sidebar.php" ;
+require"layout/header.php" ;
+require"layout/sidebar.php" ;
 ?>
 =======
 >>>>>>> 95d501c69bd4a87002353bdc8c44280fc3a7d9b8:api/resources/views/layouts/content.blade.php
@@ -613,5 +613,3 @@ require "layout/sidebar.php" ;
   <!-- /.content-wrapper -->
 
 <?php require "layout/footer.php" ;?>
-=======
->>>>>>> 95d501c69bd4a87002353bdc8c44280fc3a7d9b8:api/resources/views/layouts/content.blade.php
