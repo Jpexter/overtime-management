@@ -15,7 +15,6 @@ class MasterDivisionController extends Controller
      */
     public function index()
     {
-        
         return view('master_division.master_division', [
             'divisions' => MasterDivisionModel::all() 
         ]);
@@ -107,6 +106,6 @@ class MasterDivisionController extends Controller
     {
         MasterDivisionModel::destroy($id_division);
 
-        return redirect('/masterdivision')->with('success', 'New Division has been added!');
+        return redirect('/masterdivision')->with('success', 'Division has been deleted!');
     }
 }

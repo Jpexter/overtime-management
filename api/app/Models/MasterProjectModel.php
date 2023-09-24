@@ -10,16 +10,13 @@ class MasterProjectModel extends Model
     use HasFactory;
     protected $table = 'tb_master_project';
 
+    protected $primaryKey = 'id_project';
+
     protected $fillable = [
         'project_name',
         'status',
         'is_on_duty'
     ];
-
-    public function tb_master_project() 
-    {
-        //
-    }
 }
 
 

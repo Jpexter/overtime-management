@@ -116,6 +116,6 @@
 <!-- AdminLTE App -->
 <script src="{{asset('ui-html')}}/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="{{asset('ui-html')}}/dist/js/demo.js"></script>
+{{-- <script src="{{asset('ui-html')}}/dist/js/demo.js"></script> --}}
 </body>
 </html>

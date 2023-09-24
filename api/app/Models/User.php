@@ -3,10 +3,11 @@
 namespace App\Models;
 
 use App\Models\RoleModel;
+use Laravel\Sanctum\HasApiTokens;
+use App\Models\MasterBasicSalaryModel;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
@@ -36,6 +37,12 @@ class User extends Authenticatable
     {
         return $this->belongsTo(RoleModel::class, 'id_role', 'id_role');   
     }
+
+    public function tb_basic_salary()
+    {
+        return $this->hasOne(MasterBasicSalaryModel::class);
+    }
+
 
     /**
      * The attributes that should be hidden for serialization.

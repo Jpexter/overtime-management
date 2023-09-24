@@ -17,7 +17,7 @@ class CreateTbMasterProject extends Migration
             $table->bigIncrements('id_project');
             $table->string('project_name');
             $table->enum('status', ['normal', 'holiday']);
-            $table->string('is_on_duty');
+            $table->enum('is_on_duty', ['Y', 'N']);
             $table->softDeletes();
             $table->timestamps();
         });
