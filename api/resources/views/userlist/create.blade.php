@@ -29,7 +29,7 @@
         <!-- /.card-header -->
 
     
-    <form action="{{'/addUser'}}" method="post">
+    <form action="{{ route('userlist.store') }}" method="post">
         @csrf
         <div class="card-body">
           <div class="row d-flex">
@@ -81,7 +81,7 @@
           <div class="row">
             <div class="col">
               <div class="d-flex justify-content-end">
-                    <button type="submit" class="btn btn-sm btn-danger mr-2">Cancel</button>
+                <a href="{{ route('userlist.index') }}" class="btn btn-sm btn-danger">Cancel</a>
                     <button type="submit" class="btn  btn-sm btn-success">Submit</button>
               </div>
             </div>

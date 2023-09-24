@@ -23,7 +23,8 @@
 
   <!-- Main content -->
   <!-- SELECT2 EXAMPLE -->
-  <form action="/updateuser/{{ $data->id_users }}" method="post">
+  <form action="{{ route('userlist.update', $data->id_users) }}" method="post">
+    @method('put')
     @csrf
     <div class="card-body">
       <div class="row d-flex">

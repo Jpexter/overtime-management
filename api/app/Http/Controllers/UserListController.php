@@ -8,15 +8,33 @@ use Illuminate\Support\Facades\Hash;
 
 class UserListController extends Controller
 {
-    public function index(){
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
         $data = User::all();
         return view('userlist.index', compact('data'));
     }
 
-    public function insert(){
-        return view('userlist.adduser');
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('userlist.create');
     }
 
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
     public function store(Request $request)
     {
         $validatedData = $request->validate([
@@ -32,27 +50,76 @@ class UserListController extends Controller
 
         User::create($validatedData);
 
-        return redirect()->route('login')->with('success', 'Registration Successful');
+        return redirect()->route('userlist')->with('success', 'Registration Successful');
     }
 
-    public function edit($id_users){    
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id_users)
+    {
         $data = User::find($id_users);
         // dd($data);
-        return view('userlist.updateuser', compact('data'));
+        return view('userlist.edit', compact('data'));
     }
 
-    public function update(Request $request, $id_users){
-        $data = User::find($id_users);
-        $data->update($request->all());
-        return redirect()->route('login')->with('success', 'Update Successful');
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id_users)
+{
+    $data = User::find($id_users);
+    $data->name = $request->input('name');
+    $data->username = $request->input('username');
+    $data->email = $request->input('email');
+    $data->phone_number = $request->input('phone_number');
+    $data->id_role = $request->input('id_role');
+
+    // Check if a new password is provided
+    if ($request->has('password')) {
+        $data->password = bcrypt($request->input('password'));
     }
 
-    public function delete($id_users){
-        $data = User::find($id_users);
-        $data->delete();
-        return redirect()->route('login')->with('success', 'Delete Successful');
-    }
+    $data->save();
 
+    return redirect()->route('userlist.index')->with('success', 'Update Successful');
+}
+
+
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id_users)
+{
+    $data = User::find($id_users);
+    if (!$data) {
+        return redirect()->back()->with('error', 'User not found');
+    }
     
+    $data->delete();
     
+    return redirect()->route('userlist.index')->with('success', 'Delete Successful');
+}
 }

@@ -26,13 +26,15 @@ Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 
-Route::get('/addUser', [UserListController::class, 'insert']);
-Route::post('/addUser', [UserListController::class, 'store']);
+// Route::get('/addUser', [UserListController::class, 'insert']);
+// Route::post('/addUser', [UserListController::class, 'store']);
 
-Route::get('/userlist', [UserListController::class, 'index']);
+// Route::get('/userlist', [UserListController::class, 'index']);
 
-Route::get('/edituser/{id_users}', [UserListController::class, 'edit']);
-Route::post('/updateuser/{id_users}', [UserListController::class, 'update']);
+// Route::get('/edituser/{id_users}', [UserListController::class, 'edit']);
+// Route::post('/updateuser/{id_users}', [UserListController::class, 'update']);
+
+Route::resource('/userlist', UserListController::class);
 
 Route::get('/delete/{id}', [UserListController::class, 'delete'])->name('delete');
 

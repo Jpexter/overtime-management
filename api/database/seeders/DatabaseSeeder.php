@@ -15,6 +15,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+
+        User::create([
+            
+        ]);
+
         RoleModel::create([
             'role_name' => 'user',
             'menu' => 'form overtime, cuti, absensi'
@@ -37,14 +42,5 @@ class DatabaseSeeder extends Seeder
         // User::factory()->create([
         //     'id_role' => RoleModel::where('role_name', 'admin')->first()->id,
         // ]);
-        
-        // User::factory()->create([
-        //     'id_role' => RoleModel::where('role_name', 'supervisor')->first()->id,
-        // ]);
-        
-        // User::factory()->create([
-        //     'id_role' => RoleModel::where('role_name', 'leader')->first()->id,
-        // ]);
-        
     }
 }

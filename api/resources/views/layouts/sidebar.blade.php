@@ -72,7 +72,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="" class="nav-link">
               <i class="nav-icon fas fa-file"></i>
               <p>
                 Master Data
@@ -81,24 +81,24 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="masterproject.html" class="nav-link">
+                <a href="/masterproject" class="nav-link">
                   <p>Master Project</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/icons.html" class="nav-link">
+                <a href="/masterbasicsalary" class="nav-link">
                   <p>Master Basic Salary</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/UI/buttons.html" class="nav-link">
+                <a href="/masterdivision" class="nav-link">
                   <p>Master Division</p>
                 </a>
               </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
               <p>
                 User Management
@@ -107,7 +107,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/userlist.index" class="nav-link">
+                <a href="/userlist" class="nav-link">
                   <p>User List</p>
                 </a>
               </li>

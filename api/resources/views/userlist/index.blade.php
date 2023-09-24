@@ -28,7 +28,7 @@
       <div class="col-11">
           <div class="d-flex justify-content-end">
               <button class="btn btn-sm bg-success" style="width: 70px;">
-                  <a href="adduserlist.html">+ Add</a>
+                  <a href="/userlist/create">+ Add</a>
               </button>
           </div>
         <div class="card">
@@ -51,15 +51,17 @@
                   <td>{{$row->id_role}}</td>
                   <td>
                       <button class="btn">
-                          <a href="/edituser/{{$row->id_users}}">
+                          <a href="/userlist/{{$row->id_users}}/edit">
                               <i class="fas fa-edit text-warning"></i> <!-- Ikon Edit -->
                           </a>
                       </button>
-                      <button class="btn">
-                        <a href="/delete/{{$row->id_users}}">
-                          <i class="fas fa-trash text-danger"></i>
-                        </a>
-                      </button>
+                      <form action="{{ route('userlist.destroy', $row->id_users) }}" method="POST" class="d-inline">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-link">
+                            <i class="fas fa-trash text-danger"></i>
+                        </button>
+                    </form>
                   </td>
                 </tr>
                 @endforeach
