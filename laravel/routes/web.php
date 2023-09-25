@@ -34,9 +34,9 @@ Route::post('/logout', [LoginController::class, 'logout']);
 // Route::get('/edituser/{id_users}', [UserListController::class, 'edit']);
 // Route::post('/updateuser/{id_users}', [UserListController::class, 'update']);
 
-Route::resource('/userlist', UserListController::class);
+// Route::resource('/userlist', UserListController::class);
 
-Route::get('/delete/{id}', [UserListController::class, 'delete'])->name('delete');
+// Route::get('/delete/{id}', [UserListController::class, 'delete'])->name('delete');
 
 Route::resource('/masterdivision', MasterDivisionController::class);
 
@@ -44,3 +44,12 @@ Route::resource('/masterproject', MasterProjectController::class);
 
 Route::resource('/masterbasicsalary', MasterBasicSalaryController::class);
 
+
+Route::controller(UserListController::class)->group(function(){
+    Route::get('/userlist', 'index');
+    // Route::get('/userlist/{userlist}', 'show');
+    Route::get('/userlist-edit/{id_users}', 'edit');
+    Route::post('/userlist', 'create');
+    Route::post('/userlist/{id_users}', 'update');
+    Route::delete('/userlist/{id_users}', 'delete');
+});

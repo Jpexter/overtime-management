@@ -28,7 +28,7 @@
       <div class="col-11">
           <div class="d-flex justify-content-end">
               <button class="btn btn-sm bg-success" style="width: 70px;">
-                  <a href="/userlist/create">+ Add</a>
+                  <a href="{{$baseUrl}}/userlist/create">+ Add</a>
               </button>
           </div>
         <div class="card">

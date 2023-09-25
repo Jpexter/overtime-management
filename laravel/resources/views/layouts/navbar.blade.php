@@ -16,7 +16,7 @@
     </ul>
 
     <!-- Right navbar links -->
-    <form action="/logout" method="post" class="navbar-nav ml-auto">
+    <form action="http://localhost/olams/overtime-management/api/public/logout" method="post" class="navbar-nav ml-auto">
       @csrf
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">

@@ -16,7 +16,8 @@ class UserListController extends Controller
     public function index()
     {
         $data = User::all();
-        return view('userlist.index', compact('data'));
+        $baseUrl = config('app.url');
+        return view('userlist.index', compact('data', 'baseUrl'));
     }
 
     /**
