@@ -10,7 +10,7 @@ require "layout/sidebar.php" ;
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0"> Overtime</h1>
+            <h1 class="m-0"> Overtime CS</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -33,15 +33,7 @@ require "layout/sidebar.php" ;
         <div class="card-body">
           <div class="row d-flex">
             <div class="col-md-6">
-              <form action="">
-              <div class="form-group">
-                  <label for="exampleSelectRounded0">Overtime Type</label>
-                  <select class="custom-select rounded-0" id="exampleSelectRounded0">
-                    <option>Normal</option>
-                    <option>Urgent</option>
-                    <option>Business Trips</option>
-                  </select>
-                </div>
+              <form action>
                 <!-- /.form-group -->
                 <div class="form-group">
                   <label for="name">Name</label>
@@ -49,47 +41,54 @@ require "layout/sidebar.php" ;
                 </div>
                 <!-- /.form-group -->
                 <div class="form-group">
-                  <label for="date">Date</label>
-                  <input type="date" name="date" class="form-control" id="date" placeholder="date">
+                  <label for="devision">Division</label>
+                  <input type="text" name="devision" class="form-control" id="devision" placeholder="Division">
                 </div>
+                <!-- /.form-group -->
                 <div class="row">
                     <div class="col-sm-6">
                       <!-- text input -->
                       <div class="form-group">
-                        <label>Start Time</label>
-                        <input type="time" class="form-control" placeholder="">
+                        <label>Normal</label>
+                        <input type="text" class="form-control" placeholder="">
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label>End Time</label>
-                        <input type="time" class="form-control" placeholder="">
+                        <label>Closing</label>
+                        <input type="text" class="form-control" placeholder="">
                       </div>
                     </div>
                   </div>
-                <!-- /.form-group -->
+                <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group ml-3">
+                      <input class="form-check-input" type="radio" name="radio1">
+                      <label class="form-check-label">Normal</label>
+                      <input class="form-check-input ml-2" type="radio" name="radio1">
+                      <label class="form-check-label ml-4">Closing</label>
+                      </div>
+                    </div>
+                  </div>
             </div>
             <!-- /.col -->
             <div class="col-md-6">
-                <!-- /.form-group -->
                 <div class="form-group">
                   <label for="projectname">Project Name</label>
-                  <input type="text" name="numberprojectname" class="form-control" id="numberprojectname" placeholder="Project Name">
+                  <input type="text" name="projectname" class="form-control" id="projectname" placeholder="Project Name">
                 </div>
                 <!-- /.form-group -->
                 <div class="form-group">
-                  <label for="exampleSelectRounded0">Category Overtime</label>
-                  <select class="custom-select rounded-0" id="exampleSelectRounded0">
-                    <option>Weekend</option>
-                    <option>Weekday</option>
-                    <option>Business</option>
-                  </select>
+                  <label for="Date">Date</label>
+                  <input type="date" name="date" class="form-control" id="date" placeholder="Date...">
                 </div>
                 <!-- /.form-group -->
                 <div class="form-group">
-                        <label>Textarea</label>
-                        <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
-                      </div>
+                  <label>Overtime Reason</label>
+                  <textarea class="form-control" rows="3" placeholder="Reason ..."></textarea>
+                </div>
+                <!-- /.form-group -->
             </div>
             <!-- /.col -->
         </div>
