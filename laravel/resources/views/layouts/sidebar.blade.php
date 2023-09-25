@@ -81,17 +81,17 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="{{$baseUrl}}/masterproject" class="nav-link">
+              <a href="/masterproject" class="nav-link">
                 <p>Master Project</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="{{$baseUrl}}/masterbasicsalary" class="nav-link">
+              <a href="/masterbasicsalary" class="nav-link">
                 <p>Master Basic Salary</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="{{$baseUrl}}/masterdivision" class="nav-link">
+              <a href="/masterdivision" class="nav-link">
                 <p>Master Division</p>
               </a>
             </li>
@@ -107,7 +107,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="{{$baseUrl}}/userlist" class="nav-link">
+              <a href="/userlist" class="nav-link">
                 <p>User List</p>
               </a>
             </li>

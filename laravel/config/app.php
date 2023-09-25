@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost/project_pkl/laravel/public'),
+    'url' => env('APP_URL', 'http://localhost/Pkl-2023/Overtime-management/laravel/public'),
 
     'asset_url' => env('ASSET_URL', null),
 
