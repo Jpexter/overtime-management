@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\MasterProjectModel;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class MasterDivisionModel extends Model
 {
@@ -18,4 +19,8 @@ class MasterDivisionModel extends Model
         'id_division'
     ];
 
+    public function tb_overtime_record()
+    {
+        return $this->hasMany(MasterProjectModel::class);
+    }
 }

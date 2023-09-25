@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Models\RoleModel;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\OvertimeRecordModel;
 use App\Models\MasterBasicSalaryModel;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -41,6 +42,11 @@ class User extends Authenticatable
     public function tb_basic_salary()
     {
         return $this->hasOne(MasterBasicSalaryModel::class);
+    }
+
+    public function tb_overtime_record()
+    {
+        return $this->hasMany(OvertimeRecordModel::class);
     }
 
 

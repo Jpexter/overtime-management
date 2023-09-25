@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\dataOvertime\DataOvertimeAdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserListController;
@@ -45,11 +46,11 @@ Route::resource('/masterproject', MasterProjectController::class);
 Route::resource('/masterbasicsalary', MasterBasicSalaryController::class);
 
 
-// Route::controller(UserListController::class)->group(function(){
-//     Route::get('/userlist', 'index');
-//     // Route::get('/userlist/{userlist}', 'show');
-//     Route::get('/userlist-edit/{id_users}', 'edit');
-//     Route::post('/userlist', 'create');
-//     Route::post('/userlist/{id_users}', 'update');
-//     Route::delete('/userlist/{id_users}', 'delete');
-// });
+Route::controller(DataOvertimeAdminController::class)->group(function(){
+    Route::get('/dataovertimeadmin', 'index');
+    Route::get('/dataovertimeadmin/{id_record}', 'show')->name('data_overtime_admin.show');
+    // Route::get('/userlist-edit/{id_users}', 'edit');
+    // Route::post('/userlist', 'create');
+    Route::put('/dataovertimeadmin/{id_record}', 'update')->name('data_overtime_admin.update');
+    // Route::delete('/userlist/{id_users}', 'delete');
+});

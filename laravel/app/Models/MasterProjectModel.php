@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\OvertimeRecordModel;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class MasterProjectModel extends Model
 {
@@ -17,6 +18,11 @@ class MasterProjectModel extends Model
         'status',
         'is_on_duty'
     ];
+
+    public function tb_overtime_record()
+    {
+        return $this->hasMany(OvertimeRecordModel::class);
+    }
 }
 
 

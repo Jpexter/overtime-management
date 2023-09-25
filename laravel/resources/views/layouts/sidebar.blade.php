@@ -1,10 +1,10 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
-  <!-- Brand Logo -->
-  <a href="{{'layouts.main'}}" class="brand-link">
-    <img src="{{asset('ui-html')}}/dist/img/ovt-logo.jpeg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-    <span class="brand-text font-weight-light">Olams</span>
-  </a>
+    <!-- Brand Logo -->
+    <a href="{{"layouts.main"}}" class="brand-link">
+      <img src="{{asset('ui-html')}}/dist/img/ovt-logo.jpeg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Overtime</span>
+    </a>
 
   <!-- Sidebar -->
   <div class="sidebar">
@@ -81,17 +81,17 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="/masterproject" class="nav-link">
+              <a href="{{$baseUrl}}/masterproject" class="nav-link">
                 <p>Master Project</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="/masterbasicsalary" class="nav-link">
+              <a href="{{$baseUrl}}/masterbasicsalary" class="nav-link">
                 <p>Master Basic Salary</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="/masterdivision" class="nav-link">
+              <a href="{{$baseUrl}}/masterdivision" class="nav-link">
                 <p>Master Division</p>
               </a>
             </li>
@@ -107,7 +107,7 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="/userlist" class="nav-link">
+              <a href="{{$baseUrl}}/userlist" class="nav-link">
                 <p>User List</p>
               </a>
             </li>

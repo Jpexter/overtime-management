@@ -38,12 +38,23 @@
                   <label for="project_name">Project Name</label>
                   <input type="text" name="project_name" class="form-control" id="project_name" placeholder="Project name" required>
                 </div>
+                <label for="" class="d-block">Status</label>
                 <div class="form-check">
                   <input class="form-check-input" type="radio" name="status" value="normal" checked>
                     <label class="form-check-label">Normal</label>
                   <input class="form-check-input ml-2" type="radio" name="status" value="holiday">
                     <label class="form-check-label ml-4">Holiday</label>
-              </div>
+                </div>
+
+                {{-- <label class="d-block mt-3">Is On Duty</label> --}}
+                {{-- <div class="form-check">
+                  <input class="form-check-input" type="radio" name="status" value="Y" checked>
+                  <label class="form-check-label">Yes</label>
+                  <input class="form-check-input ml-2" type="radio" name="status" value="N">
+                  <label class="form-check-label ml-4">No</label>
+                </div> --}}
+
+
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" name="is_on_duty" value="N" {{ old('is_on_duty') == 'Y' ? 'checked' : '' }}>
                     <label class="form-check-label">Is On Duty</label>

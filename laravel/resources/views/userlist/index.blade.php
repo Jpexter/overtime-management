@@ -24,6 +24,7 @@
 
   <!-- Main content -->
   <!-- /.row -->
+  <div class="container" style="width: 1100px">
   <div class="row  d-flex align-items-center justify-content-center">
       <div class="col-11">
           <div class="d-flex justify-content-end">
@@ -73,6 +74,7 @@
         <!-- /.card -->
       </div>
     </div>
+  </div>
     <!-- /.row -->
   <!-- /.content -->
 </div>
