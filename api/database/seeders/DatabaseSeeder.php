@@ -16,8 +16,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 
-        User::create([
-            
+        RoleModel::create([
+            'role_name' => 'admin',
+            'menu' => 'semua halaman'
         ]);
 
         RoleModel::create([
@@ -31,16 +32,16 @@ class DatabaseSeeder extends Seeder
         ]);
         
         RoleModel::create([
-            'role_name' => 'admin',
-            'menu' => 'semua halaman'
-        ]);
-
-        RoleModel::create([
             'role_name' => 'supervisor',
             'menu' => 'semua halaman'
         ]);
-        // User::factory()->create([
-        //     'id_role' => RoleModel::where('role_name', 'admin')->first()->id,
-        // ]);
+        User::create([
+            'name' => 'admin',
+            'username' => 'admin201',
+            'email' => 'admin201@gmail.com',
+            'password' => '$2y$10$3iDtj5bHJAmyEOC93uLGueRxJ4Pw0nhUO.V5lAA6EjFYth1zi8IsG',
+            'phone_number' => '085738717237',
+            'id_role' => '1'
+        ]);
     }
 }
