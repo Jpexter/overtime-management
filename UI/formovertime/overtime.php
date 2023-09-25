@@ -47,11 +47,26 @@ require "layout/sidebar.php" ;
                   <label for="name">Name</label>
                   <input type="text" name="name" class="form-control" id="name" placeholder="Name">
                 </div>
-                <!-- /.form-group -->
                 <div class="form-group">
-                  <label for="date">Date</label>
-                  <input type="date" name="date" class="form-control" id="date" placeholder="date">
+                  <label for="divisi">Divisi</label>
+                  <input type="text" name="divisi" class="form-control" id="divisi" placeholder="Divisi">
                 </div>
+                <!-- /.form-group -->
+                <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Start Date</label>
+                        <input type="date" class="form-control" placeholder="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>End Date</label>
+                        <input type="date" class="form-control" placeholder="">
+                      </div>
+                    </div>
+                  </div>
                 <div class="row">
                     <div class="col-sm-6">
                       <!-- text input -->
@@ -87,7 +102,7 @@ require "layout/sidebar.php" ;
                 </div>
                 <!-- /.form-group -->
                 <div class="form-group">
-                        <label>Textarea</label>
+                        <label>Reason Overtime</label>
                         <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
                       </div>
             </div>

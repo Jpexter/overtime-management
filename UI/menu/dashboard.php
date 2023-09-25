@@ -1,0 +1,185 @@
+<?php 
+require "layout/header.php" ;
+require "layout/sidebar.php" ;
+?>
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Dashboard</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard v1</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+                <h3>3 User</h3>
+                <p>Overtime of the Month</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-clock"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+                <h3>2<sup style="font-size: 20px"></sup></h3>
+                <p>total leave this month</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-checkmark"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-warning">
+              <div class="inner text-white">
+                <h3>15</h3>
+                <p>total attendance this month</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-person-add"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-danger">
+              <div class="inner">
+                <h3>65</h3>
+                <p>Unique Visitors</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-pie-graph"></i>
+              </div>
+            </div>
+          </div>
+          <!-- ./col -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+    <div class="container" style="width: 1080px;">
+      <div class="row  d-flex align-items-center justify-content-center">
+        <div class="col-12">
+          <div class="card mt-3">
+            <!-- /.card-header -->
+            <div class="card-body table-responsive p-0">
+              <table class="table table-hover text-nowrap">
+                <thead class="bg-white">
+                  <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Divisi</th>
+                    <th>Date</th>
+                    <th>Name Project</th>
+                    <th>Reason</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>IT</td>
+                    <td>10 Sep 2023</td>
+                    <td>MAP</td>
+                    <td>Bugging</td>
+                    <td>
+                        <button class="btn btn-xs btn-primary">Detail</button>
+                        <button class="btn btn-xs btn-success">Submited</button>
+                        <button class="btn btn-xs btn-danger">Reject</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Alexander Pierce</td>
+                    <td>IT</td>
+                    <td>9 Sep 2023</td>
+                    <td>RSH</td>
+                    <td>Konflik</td>
+                    <td>
+                        <button class="btn btn-xs btn-primary">Detail</button>
+                        <button class="btn btn-xs btn-success">Submited</button>
+                        <button class="btn btn-xs btn-danger">Reject</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Bob Doe</td>
+                    <td>Web Dev</td>
+                    <td>28 Sep 2023</td>
+                    <td>Cuti Bersama</td>
+                    <td>Security</td>
+                    <td>
+                        <button class="btn btn-xs btn-primary">Detail</button>
+                        <button class="btn btn-xs btn-success">Submited</button>
+                        <button class="btn btn-xs btn-danger">Reject</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Mike Doe</td>
+                    <td>IT Support</td>
+                    <td>13 Sep 2023</td>
+                    <td>TJSL</td>
+                    <td>Hosting</td>
+                    <td>
+                      <button class="btn btn-xs btn-primary">Detail</button>
+                        <button class="btn btn-xs btn-success">Submited</button>
+                        <button class="btn btn-xs btn-danger">Reject</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Mike Doe</td>
+                    <td>IT Support</td>
+                    <td>13 Sep 2023</td>
+                    <td>TJSL</td>
+                    <td>Hosting</td>
+                    <td>
+                      <button class="btn btn-xs btn-primary">Detail</button>
+                        <button class="btn btn-xs btn-success">Submited</button>
+                        <button class="btn btn-xs btn-danger">Reject</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div> 
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+<?php require "layout/footer.php" ;?>
