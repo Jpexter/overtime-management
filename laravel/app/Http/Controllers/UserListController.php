@@ -51,7 +51,7 @@ class UserListController extends Controller
 
         User::create($validatedData);
 
-        return redirect()->route('userlist')->with('success', 'Registration Successful');
+        return redirect()->route('userlist.store')->with('success', 'Registration Successful');
     }
 
     /**
