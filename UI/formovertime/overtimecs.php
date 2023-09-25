@@ -59,7 +59,7 @@ require "layout/sidebar.php" ;
                         <input type="text" class="form-control" placeholder="">
                       </div>
                     </div>
-                  </div>
+                </div>
                 <div class="row">
                     <div class="col-sm-6">
                       <!-- text input -->
